@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troca de Lados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="/atividade2/image/k.webp" alt="Imagem 1" class="imagem esquerda" id="img1">
+    <button id="botaoTrocar">Trocar</button>
+    <img src="/atividade2/image/tomate.jpg" alt="Imagem 2" class="imagem direita" id="img2">
+  </div>
+
+  <script>
+    const img1 = document.getElementById("img1");
+    const img2 = document.getElementById("img2");
+    const botao = document.getElementById("botaoTrocar");
+
+    let trocado = false;
+
+    botao.addEventListener("click", () => {
+      trocado = !trocado;
+
+      if (trocado) {
+        img1.classList.remove("esquerda");
+        img1.classList.add("direita");
+
+        img2.classList.remove("direita");
+        img2.classList.add("esquerda");
+      } else {
+        img1.classList.remove("direita");
+        img1.classList.add("esquerda");
+
+        img2.classList.remove("esquerda");
+        img2.classList.add("direita");
+      }
+    });
+  </script>
+</body>
+</html>

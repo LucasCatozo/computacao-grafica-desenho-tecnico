@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #585555;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  height: 300px;
+}
+
+/* Imagens */
+.imagem {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+/* Posições iniciais */
+.esquerda {
+  left: 0;
+}
+
+.direita {
+  right: 0;
+}
+
+/* Botão centralizado */
+#botaoTrocar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#botaoTrocar:hover {
+  background-color: #005fcc;
+}
